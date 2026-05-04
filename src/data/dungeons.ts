@@ -17,12 +17,21 @@ export interface Dungeon {
   tips: Tip[];
 }
 
+export interface GuideSection {
+  slug: string;
+  name: string;
+  shortName: string;
+  tagline: string;
+  tips: Tip[];
+}
+
 export interface Season {
   id: string;
   label: string;
   expansion: string;
   status: 'active' | 'upcoming' | 'locked';
   dungeons: Dungeon[];
+  guides: GuideSection[];
 }
 
 const season1Dungeons: Dungeon[] = [
@@ -603,6 +612,37 @@ const season1Dungeons: Dungeon[] = [
   },
 ];
 
+const season1Guides: GuideSection[] = [
+  {
+    slug: 'routing',
+    name: 'Route Building',
+    shortName: 'RTG',
+    tagline: 'Optimal path strategies across all Season 1 dungeons.',
+    tips: [],
+  },
+  {
+    slug: 'consumables',
+    name: 'Consumable Use',
+    shortName: 'CON',
+    tagline: 'Flasks, potions, and food buffs that move the needle.',
+    tips: [],
+  },
+  {
+    slug: 'defensives',
+    name: 'Defensive Usage',
+    shortName: 'DEF',
+    tagline: 'When and how to pop your cooldowns.',
+    tips: [],
+  },
+  {
+    slug: 'prio-damage',
+    name: 'Priority Damage',
+    shortName: 'PRD',
+    tagline: 'What to kill first and why it matters.',
+    tips: [],
+  },
+];
+
 export const seasons: Season[] = [
   {
     id: 'midnight-s1',
@@ -610,6 +650,7 @@ export const seasons: Season[] = [
     expansion: 'Midnight',
     status: 'active',
     dungeons: season1Dungeons,
+    guides: season1Guides,
   },
   {
     id: 'midnight-s2',
@@ -617,6 +658,7 @@ export const seasons: Season[] = [
     expansion: 'TBA',
     status: 'upcoming',
     dungeons: [],
+    guides: [],
   },
 ];
 
@@ -624,4 +666,8 @@ export const activeSeason = seasons[0];
 
 export function getDungeon(slug: string): Dungeon | undefined {
   return activeSeason.dungeons.find((d) => d.slug === slug);
+}
+
+export function getGuide(slug: string): GuideSection | undefined {
+  return activeSeason.guides.find((g) => g.slug === slug);
 }
