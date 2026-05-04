@@ -618,28 +618,98 @@ const season1Guides: GuideSection[] = [
     name: 'Route Building',
     shortName: 'RTG',
     tagline: 'Optimal path strategies across all Season 1 dungeons.',
-    tips: [],
+    tips: [
+      {
+        category: 'general',
+        order: 1,
+        title: 'Broaden your perspective',
+        text: "If you only play tank, you never get to experience what every other tank is doing. Your blindspots and routing inefficiencies will be painfully obvious for everyone else in the party, and this will cause friction. Check out online videos of how people are routing at your current key level, or play some keys as a non-tank spec to broaden your perspective. Good routing makes your entire party have a more enjoyable dungeon experience, so keep your route up-to-date and optimized as you push your way up the M+ scoring system.",
+      },
+    ],
   },
   {
     slug: 'consumables',
     name: 'Consumable Use',
     shortName: 'CON',
     tagline: 'Flasks, potions, and food buffs that move the needle.',
-    tips: [],
+    tips: [
+      {
+        category: 'general',
+        order: 1,
+        title: 'Food, Flask & Oil — 6–8% DPS gain',
+        text: 'Due to buffs in Midnight, consumables are more important than ever. Using food, flask, and oil is a 6-8% DPS gain. Have this sorted out before heading into competitive content. Do not be cheap because it\'s an "easy" key, or because you don\'t have your BiS gear yet.',
+      },
+      {
+        category: 'general',
+        order: 2,
+        title: 'Combat Potions — 4–5% DPS gain',
+        text: 'Using combat pots is a 4-5% DPS gain. One of the highest-impact buttons you can press on a pull.',
+      },
+      {
+        category: 'general',
+        order: 3,
+        title: 'Augment Rune — 1% DPS gain',
+        text: 'Using an Augment Rune is a 1% DPS gain. Small, but every percentage counts at higher key levels.',
+      },
+      {
+        category: 'general',
+        order: 4,
+        title: 'Tier & Gems — 1–2% DPS gain',
+        text: 'Using Tier 2 instead of Tier 1 is a 1% DPS gain. Using BiS gems is a 2% DPS gain. Prioritize these upgrades as soon as new pieces land.',
+      },
+      {
+        category: 'general',
+        order: 5,
+        title: 'BiS Enchants — 4–6% DPS gain',
+        text: 'Using BiS enchants (Weapon, Chest, Legs, Rings) is a 4-6% DPS gain. One of the highest-value investments you can make on any new piece of gear.',
+      },
+    ],
   },
   {
     slug: 'defensives',
     name: 'Defensive Usage',
     shortName: 'DEF',
     tagline: 'When and how to pop your cooldowns.',
-    tips: [],
+    tips: [
+      {
+        category: 'general',
+        order: 1,
+        title: 'DPS — Don\'t be Jimmy',
+        text: "Jimmy is playing DPS on Windrunner Spire's bird boss. The AoE comes, but he does not press defensive because the healer seems to catch his HP each time it drops low. Jimmy concludes that not using a defensive was fine. What he does not consider is that he consumed an extreme amount of healer attention, perhaps making the healer panic-send big CDs that were meant for later. Or maybe another party member ended up on low HP and had to use a health potion. Without realizing it, Jimmy already caused a death one or two intermissions later. Do not be Jimmy. Press defensives proactively on scripted damage.",
+      },
+      {
+        category: 'general',
+        order: 2,
+        title: 'Tank — Overlap defensives with healer mechanics',
+        text: "Tommy plays tank but does not try to overlap his defensive with the healer mechanic, meaning his low HP bar eats up smart-heal procs that should've targeted party members, or his low HP demands healer attention in moments where the healer cannot spare extra globals. This can indirectly cause healers to send a panic CD that should've been saved for later. Pool defensives to coincide with known scripted healing checks where possible.",
+      },
+      {
+        category: 'general',
+        order: 3,
+        title: 'Healer — Plan CDs around scripted patterns',
+        text: "Billy is playing healer and makes a lot of on-the-fly decisions regarding his CDs. This works fine on lower difficulties where HPS requirements are low and damage is unpredictable. At higher keys however, the fully-scripted healing patterns demand preparation. Unprepared CD usage causes party members to dip low, panic-send defensives or HP pots, and then die later when those resources are unavailable.",
+      },
+    ],
   },
   {
     slug: 'prio-damage',
     name: 'Priority Damage',
     shortName: 'PRD',
     tagline: 'What to kill first and why it matters.',
-    tips: [],
+    tips: [
+      {
+        category: 'general',
+        order: 1,
+        title: 'Switch to the highest-HP mob',
+        text: "All damage is not created equal, so don't just play for highest overall damage. If you're playing DPS, constantly switch target to the enemy mob with the most HP (if your class allows it). Having one random mob at 20% HP at the end of a pull kills the dungeon timer. Also, if there is a prio mob that should die so the tank can chain-pull, focus that one. Use ping or skull-mark for this — seriously, open your settings and keybind it, it takes 10 seconds. The HP imbalance at end of pull is often small enough that a single player can fix it by target-swapping midway through. People just aren't doing it.",
+      },
+      {
+        category: 'general',
+        order: 2,
+        title: 'Use a focus kick macro',
+        text: "If you are serious about improving at M+, you need a focus kick macro. Panic-tab-targeting to the pack's only caster mob whenever it starts casting will hold you back long-term. Always keeping the caster as your main target out of laziness causes a 2-4 second time loss every single pull — that's 30-60 seconds over a full key. Take responsibility and aim to become a better player.",
+      },
+    ],
   },
 ];
 

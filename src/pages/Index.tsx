@@ -1,6 +1,7 @@
-import { SiteNav } from "@/components/SiteNav";
-import { DungeonCard } from "@/components/DungeonCard";
-import { activeSeason } from "@/data/dungeons";
+import { SiteNav } from '@/components/SiteNav';
+import { DungeonCard } from '@/components/DungeonCard';
+import { GuideCard } from '@/components/GuideCard';
+import { activeSeason } from '@/data/dungeons';
 
 const Index = () => {
   return (
@@ -18,15 +19,38 @@ const Index = () => {
           </h1>
         </header>
 
-        <section aria-label="Dungeon pool" className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <section
+          aria-label="Dungeon pool"
+          className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4"
+        >
           {activeSeason.dungeons.map((d, i) => (
             <DungeonCard key={d.slug} dungeon={d} index={i} />
           ))}
         </section>
 
+        <div className="mt-20">
+          <header className="mb-8 flex flex-col items-start gap-2">
+            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-void">
+              General Guides
+            </span>
+            <h2 className="font-display text-2xl font-bold tracking-tight text-gradient-light">
+              Season 1 Strategy
+            </h2>
+          </header>
+
+          <section
+            aria-label="General guides"
+            className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4"
+          >
+            {activeSeason.guides.map((g, i) => (
+              <GuideCard key={g.slug} guide={g} index={i} />
+            ))}
+          </section>
+        </div>
+
         <footer className="mt-24 border-t border-border pt-8 text-center">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-            Forged in the Light · Tempered by the Void
+            All tips from BudoBoy07 on his reddit post on r/competitivewow
           </p>
         </footer>
       </main>
