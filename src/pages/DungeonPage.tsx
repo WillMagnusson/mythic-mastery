@@ -45,7 +45,7 @@ const DungeonPage = () => {
       {/* Hero */}
       <header className="relative overflow-hidden border-b border-border">
         <img
-          src={`https://picsum.photos/seed/${dungeon.imageSeed}/1600/700`}
+          src={`/thumbnails/${dungeon.imageSeed}.jpg`}
           alt=""
           className="absolute inset-0 size-full object-cover opacity-30 grayscale"
         />
