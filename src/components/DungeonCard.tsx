@@ -1,17 +1,6 @@
 import { Link } from "react-router-dom";
 import type { Dungeon } from "@/data/dungeons";
 
-const alignmentLabel: Record<Dungeon["alignment"], string> = {
-  light: "Golden Light",
-  void: "Void Residuals",
-  neutral: "Contested",
-};
-
-const alignmentClass: Record<Dungeon["alignment"], string> = {
-  light: "text-primary",
-  void: "text-void",
-  neutral: "text-muted-foreground",
-};
 
 export function DungeonCard({ dungeon, index }: { dungeon: Dungeon; index: number }) {
   const hasTips = dungeon.tips.length > 0;
@@ -31,9 +20,6 @@ export function DungeonCard({ dungeon, index }: { dungeon: Dungeon; index: numbe
 
       <div className="relative z-10 p-6">
         <div className="mb-2 flex items-center justify-between">
-          <span className={`font-mono text-[10px] font-semibold uppercase tracking-[0.2em] ${alignmentClass[dungeon.alignment]}`}>
-            {alignmentLabel[dungeon.alignment]}
-          </span>
           {hasTips ? (
             <span className="font-mono text-[10px] text-primary">{dungeon.tips.length} tips</span>
           ) : (

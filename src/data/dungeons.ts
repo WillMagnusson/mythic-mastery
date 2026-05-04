@@ -11,7 +11,6 @@ export interface Dungeon {
   name: string;
   shortName: string;
   zone: string;
-  alignment: "light" | "void" | "neutral";
   tagline: string;
   imageSeed: string;
   tips: Tip[];
@@ -31,7 +30,6 @@ const season1Dungeons: Dungeon[] = [
     name: "Pit of Saron",
     shortName: "POS",
     zone: "Icecrown",
-    alignment: "void",
     tagline: "The frozen quarry of bone and rime.",
     imageSeed: "pos",
     tips: [
@@ -86,7 +84,6 @@ const season1Dungeons: Dungeon[] = [
     name: "Windrunner Spire",
     shortName: "WRS",
     zone: "Quel'Thalas",
-    alignment: "void",
     tagline: "Shadows linger where rangers once stood.",
     imageSeed: "wrs",
     tips: [
@@ -147,7 +144,6 @@ const season1Dungeons: Dungeon[] = [
     name: "Nexus-Point Xenas",
     shortName: "NPX",
     zone: "The Nexus",
-    alignment: "void",
     tagline: "Where void and arcane collide at the edge of reason.",
     imageSeed: "npx",
     tips: [
@@ -207,7 +203,6 @@ const season1Dungeons: Dungeon[] = [
     name: "Skyreach",
     shortName: "SKY",
     zone: "Spires of Arak",
-    alignment: "light",
     tagline: "The sun cult's fortress scrapes the clouds.",
     imageSeed: "sky",
     tips: [
@@ -258,7 +253,6 @@ const season1Dungeons: Dungeon[] = [
     name: "Magister's Terrace",
     shortName: "MGT",
     zone: "Isle of Quel'Danas",
-    alignment: "void",
     tagline: "Kael'thas still whispers from shattered halls.",
     imageSeed: "mgt",
     tips: [
@@ -339,7 +333,6 @@ const season1Dungeons: Dungeon[] = [
     name: "Algethar Academy",
     shortName: "AA",
     zone: "Azure Span",
-    alignment: "neutral",
     tagline: "Knowledge corrupted, lessons turned lethal.",
     imageSeed: "aa",
     tips: [
@@ -400,7 +393,6 @@ const season1Dungeons: Dungeon[] = [
     name: "Seat of the Triumvirate",
     shortName: "SOT",
     zone: "Argus",
-    alignment: "void",
     tagline: "The Eredar throne bleeds shadow into the cosmos.",
     imageSeed: "sot",
     tips: [
@@ -466,7 +458,6 @@ const season1Dungeons: Dungeon[] = [
     name: "Maisara Caverns",
     shortName: "MC",
     zone: "Quel'Thalas",
-    alignment: "neutral",
     tagline: "Ancient caverns stir with forgotten rituals.",
     imageSeed: "mc",
     tips: [
