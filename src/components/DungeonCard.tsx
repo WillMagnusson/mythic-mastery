@@ -11,7 +11,7 @@ export function DungeonCard({ dungeon, index }: { dungeon: Dungeon; index: numbe
       style={{ animationDelay: `${index * 60}ms` }}
     >
       <img
-        src={`/thumbnails/${dungeon.imageSeed}.jpg`}
+        src={`${import.meta.env.BASE_URL}thumbnails/${dungeon.imageSeed}.jpg`}
         alt=""
         loading="lazy"
         className="absolute inset-0 size-full object-cover opacity-30 grayscale transition-all duration-700 group-hover:opacity-50 group-hover:grayscale-0 group-hover:scale-105"
