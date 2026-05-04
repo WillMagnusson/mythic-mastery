@@ -28,7 +28,10 @@ const DungeonPage = () => {
   }
 
   const grouped = order
-    .map((cat) => ({ cat, tips: dungeon.tips.filter((t) => t.category === cat) }))
+    .map((cat) => ({
+      cat,
+      tips: dungeon.tips.filter((t) => t.category === cat).sort((a, b) => a.order - b.order),
+    }))
     .filter((g) => g.tips.length > 0);
 
   const general = grouped.find((g) => g.cat === "general");
