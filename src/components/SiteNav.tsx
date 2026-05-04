@@ -14,7 +14,7 @@ export function SiteNav() {
             <span className="absolute inset-0 rounded-full bg-primary/10 blur-md" />
           </span>
           <span className="font-display text-lg font-bold uppercase tracking-tight text-foreground">
-            Mythic+ <span className="text-gradient-solar">Codex</span>
+            Mythic <span className="text-gradient-solar">Mastery</span>
           </span>
         </Link>
 
@@ -46,7 +46,7 @@ export function SiteNav() {
               ← All Dungeons
             </Link>
           )}
-          <span>The War Within · Midnight</span>
+          <span>Midnight</span>
         </div>
       </div>
     </nav>

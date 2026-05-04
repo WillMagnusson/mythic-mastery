@@ -14,7 +14,7 @@ const Index = () => {
             Season 1 · Midnight
           </span>
           <h1 className="font-display text-3xl font-bold tracking-tight text-gradient-light md:text-4xl">
-            Mythic+ Season 1 Codex
+            Mythic Mastery
           </h1>
         </header>
 

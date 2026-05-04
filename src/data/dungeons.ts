@@ -155,14 +155,14 @@ const season1Dungeons: Dungeon[] = [
 
 export const seasons: Season[] = [
   {
-    id: "tww-s1-midnight",
+    id: "midnight-s1",
     label: "Season 1",
     expansion: "Midnight",
     status: "active",
     dungeons: season1Dungeons,
   },
   {
-    id: "tww-s2",
+    id: "midnight-s2",
     label: "Season 2",
     expansion: "TBA",
     status: "upcoming",
