@@ -18,6 +18,23 @@
 
   <body>
     <div id="root"></div>
+    <script>
+      (function() {
+        var search = location.search;
+        if (search) {
+          var p = new URLSearchParams(search);
+          var path = p.get('p');
+          if (path) {
+            var query = p.get('q');
+            history.replaceState(null, null,
+              location.pathname.split('/').slice(0, 2).join('/') +
+              path + (query ? '?' + query.replace(/~and~/g, '&') : '') +
+              location.hash
+            );
+          }
+        }
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
